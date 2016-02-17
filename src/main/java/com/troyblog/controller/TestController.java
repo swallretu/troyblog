@@ -13,12 +13,20 @@ import javax.servlet.http.HttpServletResponse;
 @RequestMapping("/test")
 public class TestController {
 
-    @RequestMapping("/test")
-    public String test(HttpServletRequest request, HttpServletResponse response){
+    @RequestMapping("/index")
+    public String index(HttpServletRequest request, HttpServletResponse response){
 
-        System.out.println("come in controller");
+        System.out.println("come in controller test index.jsp");
 
         return "index";
+    }
+
+    @RequestMapping("/main")
+    public String main(HttpServletRequest request, HttpServletResponse response){
+
+        System.out.println("come in controller test main.jsp");
+
+        return "main";
     }
 
 }

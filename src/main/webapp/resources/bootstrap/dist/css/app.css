@@ -1,0 +1,29 @@
+/**
+all style of website unless bootstrap
+*/
+body{
+    padding-top: 100px;
+    /*background-image:url("resource/image/background2_2.jpg");*/
+    /*background-repeat:repeat*/
+}
+.navbar-default{
+    background-color: #0593d3;
+}
+.btn-primary{
+    background-color: #0593d3;
+}
+
+a.navbar-brand.font_text,
+.navbar-nav > li > a.font_text,
+.footer > .container > div > p{
+    color: #FFFFFF;
+}
+.footer {
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 50px;
+    background-color: #0593d3;
+    clear:both;
+    position: absolute;
+}
