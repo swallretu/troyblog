@@ -34,24 +34,24 @@
       <div class="collapse navbar-collapse"
            id="bs-example-navbar-collapse-1">
         <url class="nav navbar-nav">
-          <li><a href="#" class="font_text">主页</a></li>
-          <li><a href="#" class="font_text">日志</a></li>
+          <li><a href="<%=request.getContextPath()%>/test/main" class="font_text">主页</a></li>
+          <li><a href="<%=request.getContextPath()%>/jsp/list.jsp" class="font_text">日志</a></li>
           <li><a href="#" class="font_text">生活随笔</a></li>
           <li><a href="#" class="font_text">感慨心得</a></li>
+          <li><a href="<%=request.getContextPath()%>/jsp/addBolg.jsp" class="font_text">写博客</a></li>
           <li><a href="#" class="font_text">联系我</a></li>
-          <li><a href="#" class="font_text">just so so</a></li>
         </url>
       </div>
     </div>
   </div>
 </nav>
 
-  <div class="container" >
-    <div class="jumbotron">
+  <div class="container">
+    <div class="jumbotron" style="background-image: url(<%=request.getContextPath()%>/resources/images/bg.png);background-color: #b84d45;">
       <h1>Troy`s Blog</h1>
-      <p>欢迎来到troy的blog,走累了可以在这里歇一歇脚!</p>
+      <p>欢迎来到troy的博客,走累了可以在这里歇一歇脚!</p>
       <p>
-        <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">进入博客»</a>
+        <a class="btn btn-lg btn-default" href="../../components/#navbar" role="button">进入博客»</a>
       </p>
     </div>
   </div>
@@ -60,17 +60,17 @@
       <div class="col-xs-6 col-lg-4">
         <h2>编程语言</h2>
         <p>体会程序之美,享coding之乐趣</p>
-        <p><a class="btn btn-primary" href="#" role="button">View details »</a></p>
+        <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
       </div><!--/.col-xs-6.col-lg-4-->
       <div class="col-xs-6 col-lg-4">
         <h2>生活随笔</h2>
         <p>记生活之点滴,录经历之足迹</p>
-        <p><a class="btn btn-primary" href="#" role="button">View details »</a></p>
+        <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
       </div><!--/.col-xs-6.col-lg-4-->
       <div class="col-xs-6 col-lg-4">
         <h2>感慨心得</h2>
         <p>感沧海之一粟,慨汪洋之扁舟</p>
-        <p><a class="btn btn-primary" href="#" role="button">View details »</a></p>
+        <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
       </div><!--/.col-xs-6.col-lg-4-->
     </div>
   </div><br><br><br><br>

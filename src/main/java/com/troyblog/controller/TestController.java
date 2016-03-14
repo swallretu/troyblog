@@ -29,4 +29,30 @@ public class TestController {
         return "main";
     }
 
+    public void method(Object obj) {
+
+    }
+
+    class Test{
+        //max value is a large number
+        int max_value = 100*1000;
+
+        public void test1(){
+            for(int i=0; i<max_value;){
+                StringBuilder builder = new StringBuilder();
+                builder.append("Stirng value");
+                builder.append("append our value much time so will consume many memory");
+            }
+        }
+
+        public void test2(){
+            StringBuilder builder = new StringBuilder();
+            for(int i=0; i<max_value;i++){
+                builder.append("Stirng value");
+                builder.append("append our value much time so will consume many memory");
+                builder.setLength(0);
+            }
+        }
+    }
+
 }

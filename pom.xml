@@ -17,6 +17,21 @@
     </dependency>
 
     <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>3.1.0</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>javax.servlet.jsp</groupId>
+      <artifactId>jsp-api</artifactId>
+      <version>2.2.1-b03</version>
+      <scope>provided</scope>
+    </dependency>
+
+
+    <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-context</artifactId>
       <version>4.2.4.RELEASE</version>
@@ -39,10 +54,15 @@
       <artifactId>spring-context-support</artifactId>
       <version>4.2.4.RELEASE</version>
     </dependency>
-
-
   </dependencies>
   <build>
     <finalName>troyblog</finalName>
+    <plugins>
+      <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>tomcat-maven-plugin</artifactId>
+          <version>1.1</version>
+      </plugin>
+    </plugins>
   </build>
 </project>

@@ -16,11 +16,12 @@
 						http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
 						http://www.springframework.org/schema/tx
 						http://www.springframework.org/schema/tx/spring-tx-3.0.xsd ">
-<!-- 引入annotaion -->
-<context:annotation-config/>
+    <!-- 引入annotaion -->
+    <context:annotation-config/>
+    <context:mbean-export/>
 
-<!-- 指明annotation所作用的包的范围 -->
-<context:component-scan base-package="com.troyblog"/>
+    <!-- 指明annotation所作用的包的范围 -->
+    <context:component-scan base-package="com.troyblog"/>
 
 <!-- 获取本地-->
 <bean id="localeResolver"
