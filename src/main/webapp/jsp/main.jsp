@@ -7,8 +7,8 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script type="text/javascript" src="<%=request.getContextPath()%>/rescources/boostrap/dist/js/jquery-2.0.0.min.js"></script>
-<script type="text/javascript" src="<%=request.getContextPath()%>/rescources/boostrap/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/resources/bootstrap/dist/js/jquery-2.0.0.min.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/resources/bootstrap/dist/js/bootstrap.js"></script>
 <link rel="stylesheet" href="<%=request.getContextPath()%>/resources/bootstrap/dist/css/bootstrap.css"/>
 <link rel="stylesheet" href="<%=request.getContextPath()%>/resources/bootstrap/dist/css/app.css"/>
 <html>

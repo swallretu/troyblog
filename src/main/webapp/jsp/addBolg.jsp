@@ -46,28 +46,20 @@
   </nav>
 
   <div class="container" id="contentbody">
-
-    <div id="leftNavigate" class="col-xs-3">
-      左侧导航
-    </div>
-
-
-    <div id="rightBody" class="col-xs-9">
-      <form id="conditonSearch">
+      <form id="conditonSearch" action="<%=request.getContextPath()%>/test/addBlog" method="post">
         文章标题<input type="text" id="blogTitle" class="form-control"><br>
         描述<input type="text" id="blogDescription" class="form-control"><br>
         文章正文
-        <script id="myContainer" name="content" type="text/plain">
+        <script id="myContainer" name="content" type="text/plain" style="height:240px;overflow:scroll" charset="UTF-8">
 
         </script>
-        <input type="button" class="btn btn-default" value="Submit" onclick="showAllHtml()"/>
+        <input type="hidden" id="hiddenBlogContent" name="hiddenBlogContent" value="hidden"/>
+        <input type="submit" class="btn btn-default col-md-push-5" value="提交"/>
       </form>
-    </div>
-
   </div>
 
   <div>
-    <footer class="footer" style="position:absolute;">
+    <footer class="footer">
       <div class="container">
         <div class="col-xs-12 col-md-12" style="padding-top: 15px;text-align: center">
           <p>cory right @ troy | Email: qujianfei@hotmail.com</p>
@@ -173,8 +165,12 @@
     ]
   });
 
-  function showAllHtml(){
-    console.log(ue.getAllHtml());
+  function getBlogContent(){
+    var content = ue.getContent();
+    $("#hiddenBlogContent").val(content);
+    var hiddenVlaue = $("#hiddenBlogContent").val();
+    console.log(hiddenVlaue);
+    window.location="<%=request.getContextPath()%>/test/addBlog?hiddenValue="+hiddenVlaue;
   }
 </script>
 </body>

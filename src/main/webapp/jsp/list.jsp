@@ -22,7 +22,7 @@
 </style>
 <html>
 <head>
-    <title>note list</title>
+    <title>Troy的博客</title>
 </head>
 <body>
   <nav class="navbar navbar-default navbar-fixed-top">
@@ -53,9 +53,29 @@
       </div>
     </div>
   </nav>
-  <div class="container-fluid" style="background-color: #e1e1e1;margin-top: -50px;margin-bottom: 10px;">
-    <span style="color: #FFFFFF;">关键字</span>:<input type="text" id="keyword">
-    <br>conditional search
+  <div class="container-fluid" style="background-color: #e1e1e1;margin-top: -50px;margin-bottom: 10px;padding-top: 13px;">
+    <div class="col-md-4"></div>
+
+    <form id="conditionSearch" class="form-inline">
+      <div class="form-group">
+        <div class="dropdown" style="display: inline;">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+            文章类型
+            <input type="hidden" id="blogtype" value=""/>
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">原创</a></li>
+            <li><a href="#">转载</a></li>
+          </ul>
+        </div>
+        <div class="input-group">
+          <div class="input-group-addon">关键字</div>
+          <input type="text" class="form-control" id="keywords">
+        </div>
+        <button type="submit" class="btn btn-primary">搜索</button>
+      </div>
+    </form>
   </div>
   <div class="container">
     <div class="row index_news_row">
@@ -217,6 +237,7 @@
   </div>
 
   <script type="text/javascript">
+
     window.onload=function(){
       var news = $("div[name='row']");
       console.log(news.length);
