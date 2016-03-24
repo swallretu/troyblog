@@ -62,6 +62,11 @@
   <div id="blogDescriptor" class="col-md-12">
     发表于(2016-03-23)&nbsp;&nbsp;阅读(10) | <a href="#">编辑</a> | <a href="#">删除</a> |
   </div>
+  <hr  class="col-md-12">
+  <div class="col-md-12">
+    摘要:<span style="font-size: 12px;">工作中经常遇到JVM性能的问题,类似于OutOfMemoryException之类的因此特地总结了关于JVM的内容</span><br/>
+    关键字: <span style="font-size: 12px;"><a href="#">JVM</a> <a href="#">OutOfMemory</a></span>
+  </div>
   <hr class="col-md-12">
   <div id="blogContent" class="col-md-12">${content}</div>
   <hr class="col-md-12">
@@ -69,7 +74,6 @@
       <div class="col-md-12">
         <h3>Comments</h3>
       </div>
-
       <div class="col-md-offset-1">
         <hr class="col-md-12">
             <div id="imageTitle" class="col-md-1 col-sm-1" style="text-align: right;"><!--  padding-right: 3px; -->
@@ -79,6 +83,25 @@
               <div class="col-md-12 col-sm-11">
                 <p><span style="color:#0593d3;font-size: larger;">Swallretu</span><span style="font-size: xx-small">:发表于2016-03-30 19:30:31</span></p>
                 <p>some comments</p>
+                <%--
+                  <div class="col-md-offset-1">
+                    <hr class="col-md-12">
+                        <div id="imageTitle" class="col-md-1 col-sm-1" style="text-align: right;"><!--  padding-right: 3px; -->
+                            <img src="<%=request.getContextPath()%>/resources/images/guest_img.png" width="50" height="50"/>
+                        </div>
+                        <div id="commentContent" class="col-md-11 col-sm-11">
+                          <div class="col-md-12 col-sm-11">
+                            <p><span style="color:#0593d3;font-size: larger;">Swallretu</span><span style="font-size: xx-small">:发表于2016-03-30 19:30:31</span></p>
+                            <p>some comments</p>
+                          </div>
+                          <div class="col-md-12 col-sm-11">
+                            <button class="btn btn-default btn-sm">展开</button>
+                            <button class="btn btn-default btn-sm">回复</button>
+                          </div>
+                        </div>
+                      <hr>
+                    </div>
+                --%>
               </div>
               <div class="col-md-12 col-sm-11">
                 <button class="btn btn-default btn-sm">展开</button>

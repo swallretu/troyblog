@@ -106,7 +106,7 @@
               <!-- span 字数不能超过120字 -->
               <span style="font-size:10px;color:#8a8b8d;">
                 关键字:JVM 虚拟机<br>
-                <span style="font-size: 14px;">热的活动之一。趁难得的暑期时光，带小孩游山玩水，不仅可以增长孩子的知识、见识，更能够增进家长与孩子之间的感情热的活动之一。趁难得的暑期时光，带小孩游山玩水，不仅可以增长孩子的知识、见识，更能够增进家长与孩子之间的感情</span>
+                <span style="font-size: 14px;">[摘要]:</span><span style="font-size: 12px;">工作中经常遇到JVM性能的问题,类似于OutOfMemoryException之类的因此特地总结了关于JVM的内容</span>
               </span>
             </div>
           </div>
