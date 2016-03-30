@@ -36,22 +36,15 @@ public class TestController {
     @RequestMapping("/addBlog")
     public String addBlog(HttpServletRequest request, HttpServletResponse response){
         content = request.getParameter("content");
-//        System.out.println(hiddenValue);
         System.out.println(content);
         System.out.println("add blog Success");
-        return "";
+        return "list";
     }
 
     @RequestMapping("/blogDetail")
     public String blogDetail(HttpServletRequest request, HttpServletResponse response,Model model){
-//        String content = "<p>dfgjdflkgjg</p><p>jsdlfkdjsf</p><pre class=\"brush:groovy;toolbar:false\">sdfdskfj&nbsp;jdskldjj[;&#39;./,/.\n" +
-//                "sdfjklsd&nbsp;dsdf</pre><p><br/></p>\n";
-        model.addAttribute("content",content);
-        return "blogExample1";
-    }
-
-    public void method(Object obj) {
-
+        model.addAttribute("content",this.content);
+        return "blogDetail";
     }
 
 }
