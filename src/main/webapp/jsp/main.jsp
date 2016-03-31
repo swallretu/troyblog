@@ -59,12 +59,12 @@
     <div class="row">
       <div class="col-xs-6 col-lg-4">
         <h2>编程语言</h2>
-        <p>体会程序之美,享coding之乐趣</p>
+        <p>体会程序之美,享coding的乐趣</p>
         <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
       </div><!--/.col-xs-6.col-lg-4-->
       <div class="col-xs-6 col-lg-4">
         <h2>生活随笔</h2>
-        <p>记生活之点滴,录经历之足迹</p>
+        <p>记生活之点滴,录经历足迹</p>
         <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
       </div><!--/.col-xs-6.col-lg-4-->
       <div class="col-xs-6 col-lg-4">
@@ -76,7 +76,7 @@
   </div><br><br><br><br>
 
   <div>
-    <footer class="footer">
+    <footer class="footer" style="position: absolute;">
       <div class="container">
         <div class="col-xs-12 col-md-12" style="padding-top: 15px;text-align: center">
           <p>cory right @ troy | Email: qujianfei@hotmail.com</p>
