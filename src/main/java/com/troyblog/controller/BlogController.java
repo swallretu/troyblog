@@ -27,6 +27,13 @@ public class BlogController extends BaseController{
         return "list";
     }
 
+    @RequestMapping("/list")
+    public String blogList(){
+        return "list";
+    }
+
+
+
     @RequestMapping("/blogDetail")
     public String blogDetail(Model model){
         model.addAttribute("content",this.content);

@@ -36,7 +36,7 @@
           <span class="sr-only"></span> <span class="icon-bar"></span> <span
                 class="icon-bar"></span> <span class="icon-bar"></span>
         </button>
-        <a href="#" class="navbar-brand font_text">troy`s blog</a>
+        <a href="<%=request.getContextPath()%>/blog/main" class="navbar-brand font_text">troy`s blog</a>
       </div>
     </div>
     <div class="col-xs-12 col-md-6">

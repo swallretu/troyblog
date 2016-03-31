@@ -27,7 +27,7 @@
           <span class="sr-only"></span> <span class="icon-bar"></span> <span
                 class="icon-bar"></span> <span class="icon-bar"></span>
         </button>
-        <a href="#" class="navbar-brand font_text">troy`s blog</a>
+        <a href="<%=request.getContextPath()%>/blog/main" class="navbar-brand font_text">troy`s blog</a>
       </div>
     </div>
     <div class="col-xs-12 col-md-6">
@@ -51,7 +51,7 @@
       <h1>Troy`s Blog</h1>
       <p>欢迎来到troy的博客,走累了可以在这里歇一歇脚!</p>
       <p>
-        <a class="btn btn-lg btn-default" href="../../components/#navbar" role="button">进入博客»</a>
+        <a class="btn btn-lg btn-default" href="<%=request.getContextPath()%>/blog/list" role="button">进入博客»</a>
       </p>
     </div>
   </div>
