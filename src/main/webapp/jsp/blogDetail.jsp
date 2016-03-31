@@ -43,7 +43,7 @@
       <div class="collapse navbar-collapse"
            id="bs-example-navbar-collapse-1">
         <url class="nav navbar-nav">
-          <li><a href="<%=request.getContextPath()%>/test/main" class="font_text">主页</a></li>
+          <li><a href="<%=request.getContextPath()%>/blog/main" class="font_text">主页</a></li>
           <li><a href="<%=request.getContextPath()%>/jsp/list.jsp" class="font_text">日志</a></li>
           <li><a href="#" class="font_text">生活随笔</a></li>
           <li><a href="#" class="font_text">感慨心得</a></li>

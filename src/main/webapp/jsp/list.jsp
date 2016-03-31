@@ -42,7 +42,7 @@
         <div class="collapse navbar-collapse"
              id="bs-example-navbar-collapse-1">
           <url class="nav navbar-nav">
-            <li><a href="<%=request.getContextPath()%>/test/main" class="font_text">主页</a></li>
+            <li><a href="<%=request.getContextPath()%>/blog/main" class="font_text">主页</a></li>
             <li><a href="#" class="font_text">日志</a></li>
             <li><a href="#" class="font_text">生活随笔</a></li>
             <li><a href="#" class="font_text">感慨心得</a></li>
@@ -102,7 +102,7 @@
               </a>
             </div>
             <div class="media-body">
-              <a href="<%=request.getContextPath()%>/test/blogDetail" style="text-decoration:none;"><h4 class="media-heading" style="font-weight:bold;color:#5f6269;">[原创]Java内存优化虚拟机的技术</h4></a>
+              <a href="<%=request.getContextPath()%>/blog/blogDetail" style="text-decoration:none;"><h4 class="media-heading" style="font-weight:bold;color:#5f6269;">[原创]Java内存优化虚拟机的技术</h4></a>
               <!-- span 字数不能超过120字 -->
               <span style="font-size:10px;color:#8a8b8d;">
                 关键字:JVM 虚拟机<br>

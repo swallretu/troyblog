@@ -33,7 +33,7 @@
         <div class="collapse navbar-collapse"
              id="bs-example-navbar-collapse-1">
           <url class="nav navbar-nav">
-            <li><a href="<%=request.getContextPath()%>/test/main" class="font_text">主页</a></li>
+            <li><a href="<%=request.getContextPath()%>/blog/main" class="font_text">主页</a></li>
             <li><a href="<%=request.getContextPath()%>/jsp/list.jsp" class="font_text">日志</a></li>
             <li><a href="#" class="font_text">生活随笔</a></li>
             <li><a href="#" class="font_text">感慨心得</a></li>
@@ -46,7 +46,7 @@
   </nav>
 
   <div class="container" id="contentbody">
-      <form id="conditonSearch" action="<%=request.getContextPath()%>/test/addBlog" method="post">
+      <form id="conditonSearch" action="<%=request.getContextPath()%>/blog/addBlog" method="post">
         文章标题<input type="text" id="blogTitle" class="form-control"><br>
         描述<input type="text" id="blogDescription" class="form-control"><br>
         文章正文
@@ -170,7 +170,7 @@
     $("#hiddenBlogContent").val(content);
     var hiddenVlaue = $("#hiddenBlogContent").val();
     console.log(hiddenVlaue);
-    window.location="<%=request.getContextPath()%>/test/addBlog?hiddenValue="+hiddenVlaue;
+    window.location="<%=request.getContextPath()%>/blog/addBlog?hiddenValue="+hiddenVlaue;
   }
 </script>
 </body>
