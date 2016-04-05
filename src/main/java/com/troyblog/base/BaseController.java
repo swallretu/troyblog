@@ -1,4 +1,5 @@
 package com.troyblog.base;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
@@ -10,8 +11,8 @@ import javax.servlet.http.HttpServletResponse;
 @Component
 public class BaseController {
 
-    @Resource
     public HttpServletRequest request;
-    @Resource
+
     public HttpServletResponse response;
+
 }
