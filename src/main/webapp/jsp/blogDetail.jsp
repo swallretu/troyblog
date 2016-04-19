@@ -81,29 +81,28 @@
               <div class="col-md-12 col-sm-11">
                 <p><span style="color:#0593d3;font-size: larger;">Swallretu</span><span style="font-size: xx-small">:发表于2016-03-30 19:30:31</span></p>
                 <p>some comments</p>
-                <%--
-                  <div class="col-md-offset-1">
-                    <hr class="col-md-12">
-                        <div id="imageTitle" class="col-md-1 col-sm-1" style="text-align: right;"><!--  padding-right: 3px; -->
-                            <img src="<%=request.getContextPath()%>/resources/images/guest_img.png" width="50" height="50"/>
-                        </div>
-                        <div id="commentContent" class="col-md-11 col-sm-11">
-                          <div class="col-md-12 col-sm-11">
-                            <p><span style="color:#0593d3;font-size: larger;">Swallretu</span><span style="font-size: xx-small">:发表于2016-03-30 19:30:31</span></p>
-                            <p>some comments</p>
-                          </div>
-                          <div class="col-md-12 col-sm-11">
-                            <button class="btn btn-default btn-sm">展开</button>
-                            <button class="btn btn-default btn-sm">回复</button>
-                          </div>
-                        </div>
-                      <hr>
-                    </div>
-                --%>
               </div>
               <div class="col-md-12 col-sm-11">
                 <button class="btn btn-default btn-sm">展开</button>
                 <button class="btn btn-default btn-sm">回复</button>
+              </div>
+
+              <div class="col-md-offset-1">
+                <hr class="col-md-12">
+                <div id="1" class="col-md-1 col-sm-1" style="text-align: right;"><!--  padding-right: 3px; -->
+                  <img src="<%=request.getContextPath()%>/resources/images/guest_img.png" width="50" height="50"/>
+                </div>
+                <div id="2" class="col-md-11 col-sm-11">
+                  <div class="col-md-12 col-sm-11">
+                    <p><span style="color:#0593d3;font-size: larger;">Swallretu</span><span style="font-size: xx-small">:发表于2016-03-30 19:30:31</span></p>
+                    <p>some comments</p>
+                  </div>
+                  <div class="col-md-12 col-sm-11">
+                    <button class="btn btn-default btn-sm">展开</button>
+                    <button class="btn btn-default btn-sm">回复</button>
+                  </div>
+                </div>
+                <hr>
               </div>
             </div>
         <hr>

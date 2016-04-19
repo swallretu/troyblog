@@ -47,13 +47,12 @@
 
   <div class="container" id="contentbody">
       <form id="conditonSearch" action="<%=request.getContextPath()%>/blog/addBlog" method="post">
-        文章标题<input type="text" id="blogTitle" class="form-control"><br>
-        描述<input type="text" id="blogDescription" class="form-control"><br>
+        文章标题<input type="text" id="blogTitle" name="blogTitle" class="form-control"><br>
+        描述<input type="text" id="blogDescription" name="blogDescription" class="form-control"><br>
         文章正文
         <script id="myContainer" name="content" type="text/plain" style="height:240px;overflow:scroll" charset="UTF-8">
 
         </script>
-        <input type="hidden" id="hiddenBlogContent" name="hiddenBlogContent" value="hidden"/>
         <input type="submit" class="btn btn-default col-md-push-5" value="提交"/>
       </form>
   </div>
@@ -164,14 +163,6 @@
       ]
     ]
   });
-
-  function getBlogContent(){
-    var content = ue.getContent();
-    $("#hiddenBlogContent").val(content);
-    var hiddenVlaue = $("#hiddenBlogContent").val();
-    console.log(hiddenVlaue);
-    window.location="<%=request.getContextPath()%>/blog/addBlog?hiddenValue="+hiddenVlaue;
-  }
 </script>
 </body>
 </html>

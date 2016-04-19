@@ -11,8 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 @Component
 public class BaseController {
 
+    @Autowired
     public HttpServletRequest request;
-
-    public HttpServletResponse response;
-
 }

@@ -37,7 +37,7 @@
           <li><a href="<%=request.getContextPath()%>/blog/main" class="font_text">主页</a></li>
           <li><a href="<%=request.getContextPath()%>/jsp/list.jsp" class="font_text">日志</a></li>
           <li><a href="#" class="font_text">生活随笔</a></li>
-          <li><a href="#" class="font_text">感慨心得</a></li>
+          <li><a href="<%=request.getContextPath()%>/test/control" class="font_text">感慨心得</a></li>
           <li><a href="<%=request.getContextPath()%>/jsp/addBolg.jsp" class="font_text">写博客</a></li>
           <li><a href="<%=request.getContextPath()%>/test/add" class="font_text">联系我</a></li>
         </url>

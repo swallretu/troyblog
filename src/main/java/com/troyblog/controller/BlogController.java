@@ -20,9 +20,12 @@ public class BlogController extends BaseController{
         return "main";
     }
     @RequestMapping("/addBlog")
-    public String addBlog(){
-        content = request.getParameter("content");
-        System.out.println(content);
+    public String addBlog(@RequestParam String blogTitle,@RequestParam String blogDescription,@RequestParam String content){
+
+        // get blog title content and descriptor from addBlog.jsp
+        System.out.println("blogTitle===========>" + blogTitle);
+        System.out.println("blogDescription===========>" + blogDescription);
+        System.out.println("content===========>" + content);
         System.out.println("add blog Success");
         return "list";
     }
